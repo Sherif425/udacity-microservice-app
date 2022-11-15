@@ -5,7 +5,7 @@ metadata:
     service: reverseproxy
   name: reverseproxy
 spec:
-  replicas: 1
+  replicas: 2
   selector:
     matchLabels:
       service: reverseproxy
@@ -15,7 +15,7 @@ spec:
         service: reverseproxy
     spec:
       containers:
-        - image: sherif425/reverseproxy:v1
+        - image: sherif425/reverseproxy:v3
           name: reverseproxy
           imagePullPolicy: Always
           resources:
