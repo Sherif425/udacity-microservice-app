@@ -13,13 +13,13 @@ services:
     environment:
       #AWS_ACCESS_KEY_ID: AKIA5DT7WNH3FYWZKHFL
       #AWS_SECRET_ACCESS_KEY: OnuEDIm6XSOr35ndYrgbhnTRbGNn+9+pcL7wk/g
-      POSTGRES_USERNAME: dbadmin
-      POSTGRES_PASSWORD: pAss0987vcx 
+      POSTGRES_USERNAME: postgres
+      POSTGRES_PASSWORD: postgres 
       POSTGRES_DB: postgres 
-      POSTGRES_HOST: 
-      AWS_REGION: us-east-1 
+      POSTGRES_HOST: postgres.cmxddatlnnw5.us-east-2.rds.amazonaws.com
+      AWS_REGION: us-east-2
       AWS_PROFILE: default 
-      AWS_BUCKET: my-901137197558-bucket
+      AWS_BUCKET: my-230082686011-bucket
       JWT_SECRET: testing
       URL: "http://localhost:8100"
   backend-feed:
@@ -27,15 +27,13 @@ services:
     volumes:
       - $HOME/.aws:/root/.aws
     environment:
-      #AWS_ACCESS_KEY_ID: AKIA5DT7WNH3FYWZKHFL
-      #AWS_SECRET_ACCESS_KEY: OnuEDIm6XSOr35ndYrgbhnTRbGNn+9+pcL7wk/g
-      POSTGRES_USERNAME: dbadmin
-      POSTGRES_PASSWORD: pAss0987vcx 
+      POSTGRES_USERNAME: postgres
+      POSTGRES_PASSWORD: postgres 
       POSTGRES_DB: postgres
-      POSTGRES_HOST: udagram.cec1ip3ci6sj.us-east-1.rds.amazonaws.com
-      AWS_REGION: us-east-1
+      POSTGRES_HOST: postgres.cmxddatlnnw5.us-east-2.rds.amazonaws.com
+      AWS_REGION: us-east-2
       AWS_PROFILE: default 
-      AWS_BUCKET: my-901137197558-bucket
+      AWS_BUCKET: my-230082686011-bucket
       JWT_SECRET: testing
       URL: "http://localhost:8100"
   frontend:
