@@ -15,7 +15,7 @@ spec:
         service: reverseproxy
     spec:
       containers:
-        - image: sherif425/reverseproxy:v3
+        - image: sherif425/reverseproxy:v4
           name: reverseproxy
           imagePullPolicy: Always
           resources:

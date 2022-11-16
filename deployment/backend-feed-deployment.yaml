@@ -15,12 +15,12 @@ spec:
         service: backend-feed
     spec:
       containers:
-        - image: sherif425/udagram-api-feed:v3
+        - image: sherif425/udagram-api-feed:v4
           name: backend-feed
           imagePullPolicy: Always
           resources:
             requests:
-              memory: "64Mi"
+              memory: "128Mi"
               cpu: "250m"
             limits:
               memory: "2048Mi"

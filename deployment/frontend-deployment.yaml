@@ -16,7 +16,7 @@ spec:
         api: external
     spec:
       containers:
-        - image: sherif425/udagram-frontend:v3
+        - image: sherif425/udagram-frontend:v4
           name: frontend
           imagePullPolicy: Always
           ports:

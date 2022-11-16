@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: ConfigMap
+data:
+  AWS_BUCKET: my-230082686011-bucket
+  AWS_PROFILE: default
+  AWS_REGION: us-east-2
+  JWT_SECRET: testing
+  POSTGRES_DB: postgres
+  POSTGRES_HOST: cG9zdGdyZXMuY214ZGRhdGxubnc1LnVzLWVhc3QtMi5yZHMuYW1hem9uYXdzLmNvbQo=
+  POSTGRES_PORT: "5432"
+  URL: http://localhost:8100
+metadata:
+  name: env-config
