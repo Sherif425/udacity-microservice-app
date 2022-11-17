@@ -15,7 +15,7 @@ spec:
         service: reverseproxy
     spec:
       containers:
-        - image: sherif425/reverseproxy:v4
+        - image: sherif425/reverseproxy:v5
           name: reverseproxy
           imagePullPolicy: Always
           resources:
@@ -26,5 +26,5 @@ spec:
               memory: "2048Mi"
               cpu: "500m"
           ports:
-            - containerPort: 8080
+            - containerPort: 80
 #     restartPolicy: Always
